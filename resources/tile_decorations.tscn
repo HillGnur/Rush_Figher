@@ -1,0 +1,81 @@
+[gd_scene load_steps=20 format=3 uid="uid://cxk3v7u3tbsuq"]
+
+[ext_resource type="Texture2D" uid="uid://digh1byhrw6e4" path="res://assets/tile/decoration/fence_1.png" id="1_hr8yc"]
+[ext_resource type="Texture2D" uid="uid://bb0pcdegtabu2" path="res://assets/tile/decoration/fence_2.png" id="2_ljrgk"]
+[ext_resource type="Texture2D" uid="uid://br038ox1due8s" path="res://assets/tile/decoration/grass_1.png" id="3_4f8sa"]
+[ext_resource type="Texture2D" uid="uid://c1qnmjgri7nht" path="res://assets/tile/decoration/lamp.png" id="3_tkn6k"]
+[ext_resource type="Texture2D" uid="uid://bufaqu4m84hn7" path="res://assets/tile/decoration/grass_2.png" id="4_apy2j"]
+[ext_resource type="Texture2D" uid="uid://offr4a775la6" path="res://assets/tile/decoration/rock_1.png" id="4_yy1uf"]
+[ext_resource type="Texture2D" uid="uid://drcrdmrbu0dfm" path="res://assets/tile/decoration/grass_3.png" id="5_74jyp"]
+[ext_resource type="Texture2D" uid="uid://bymg25bvhxeac" path="res://assets/tile/decoration/rock_2.png" id="5_hjdi6"]
+[ext_resource type="Texture2D" uid="uid://cukg5v42df321" path="res://assets/tile/decoration/rock_3.png" id="6_3olo2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sx8l8"]
+resource_name = "fence_1"
+texture = ExtResource("1_hr8yc")
+0:0/size_in_atlas = Vector2i(6, 2)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8c7sf"]
+resource_name = "fence_2"
+texture = ExtResource("2_ljrgk")
+0:0/size_in_atlas = Vector2i(6, 2)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gbhvr"]
+resource_name = "grass_1"
+texture = ExtResource("3_4f8sa")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8gfug"]
+resource_name = "grass_2"
+texture = ExtResource("4_apy2j")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w28d0"]
+resource_name = "grass_3"
+texture = ExtResource("5_74jyp")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_76a6w"]
+resource_name = "lamp"
+texture = ExtResource("3_tkn6k")
+0:0/size_in_atlas = Vector2i(2, 4)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 24)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mhiv2"]
+resource_name = "rock_1"
+texture = ExtResource("4_yy1uf")
+0:1/size_in_atlas = Vector2i(2, 1)
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1wwwi"]
+resource_name = "rock_2"
+texture = ExtResource("5_hjdi6")
+0:1/size_in_atlas = Vector2i(2, 1)
+0:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_apqje"]
+resource_name = "rock_3"
+texture = ExtResource("6_3olo2")
+0:0/size_in_atlas = Vector2i(4, 2)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 8)
+
+[sub_resource type="TileSet" id="TileSet_qk2ol"]
+sources/0 = SubResource("TileSetAtlasSource_sx8l8")
+sources/1 = SubResource("TileSetAtlasSource_8c7sf")
+sources/2 = SubResource("TileSetAtlasSource_gbhvr")
+sources/3 = SubResource("TileSetAtlasSource_8gfug")
+sources/4 = SubResource("TileSetAtlasSource_w28d0")
+sources/5 = SubResource("TileSetAtlasSource_76a6w")
+sources/6 = SubResource("TileSetAtlasSource_mhiv2")
+sources/7 = SubResource("TileSetAtlasSource_1wwwi")
+sources/8 = SubResource("TileSetAtlasSource_apqje")
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_qk2ol")
+format = 2

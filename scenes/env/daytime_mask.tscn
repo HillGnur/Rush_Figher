@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://xbwpcv34275e"]
+
+[node name="DaytimeMask" type="CanvasModulate"]
+color = Color(0.176471, 0.176471, 0.176471, 1)
